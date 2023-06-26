@@ -1,0 +1,10 @@
+﻿<Window x:Class="GACManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:GACManager="clr-namespace:GACManager"
+        xmlns:apexShells="clr-namespace:Apex.Shells;assembly=Apex"
+        xmlns:shells="clr-namespace:Apex.Shells"
+        Title="GAC Manager" Height="500" Width="600" Icon="/GACManager;component/GACManager.ico">
+    <shells:Shell>
+        <GACManager:GACManagerView />
+    </shells:Shell>
+</Window>

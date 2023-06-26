@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: E:\20200806\GAC Manager\GACManagerLooseBinaries\Apex.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5A485877-D7CA-47EB-A578-57F030AB6279}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Apex</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <ApplicationVersion>1.4.1.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Apex</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Interactivity">
+      <HintPath>lib\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApexBroker.cs" />
+    <Compile Include="ExecutionContext.cs" />
+    <Compile Include="MVVM\IView.cs" />
+    <Compile Include="MVVM\ModelAttribute.cs" />
+    <Compile Include="MVVM\SafeObservableCollection`1.cs" />
+    <Compile Include="MVVM\IModel.cs" />
+    <Compile Include="MVVM\Command.cs" />
+    <Compile Include="MVVM\AsynchronousCommand.cs" />
+    <Compile Include="MVVM\ViewModel.cs" />
+    <Compile Include="MVVM\ViewModel`1.cs" />
+    <Compile Include="MVVM\CommandEventHandler.cs" />
+    <Compile Include="MVVM\CancelCommandEventHandler.cs" />
+    <Compile Include="MVVM\CommandEventArgs.cs" />
+    <Compile Include="MVVM\CancelCommandEventArgs.cs" />
+    <Compile Include="MVVM\ViewModelAttribute.cs" />
+    <Compile Include="MVVM\NotifyingPropertyChangedArgs.cs" />
+    <Compile Include="MVVM\NotifyingPropertyChangedEvent.cs" />
+    <Compile Include="MVVM\NotifyingProperty.cs" />
+    <Compile Include="MVVM\ViewAttribute.cs" />
+    <Compile Include="MVVM\View.cs" />
+    <Compile Include="Helpers\DispatcherHelper.cs" />
+    <Compile Include="Helpers\AssembliesHelper.cs" />
+    <Compile Include="Helpers\EnumHelper.cs" />
+    <Compile Include="Helpers\Popups\PopupAnimationHelper.cs" />
+    <Compile Include="Helpers\Popups\FadeInOutPopupAnimationHelper.cs" />
+    <Compile Include="Helpers\Popups\BounceInOutPopupAnimationHelper.cs" />
+    <Compile Include="Extensions\FrameworkElementExtensions.cs" />
+    <Compile Include="Extensions\ListExtensions.cs" />
+    <Compile Include="Extensions\DependencyObjectExtensions.cs" />
+    <Compile Include="Extensions\EnumExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Extensions\DateTimeExtensions.cs" />
+    <Compile Include="Commands\EventBindings.cs" />
+    <Compile Include="Commands\EventBindingCollection.cs" />
+    <Compile Include="Commands\EventBinding.cs" />
+    <Compile Include="Commands\ExtendedCommands.cs" />
+    <Compile Include="Commands\CommandReference.cs" />
+    <Compile Include="Controls\CueDisplayMode.cs" />
+    <Compile Include="Controls\CueTextBox.cs" />
+    <Compile Include="Controls\ApexGrid.cs" />
+    <Compile Include="Controls\CrossButton.cs" />
+    <Compile Include="Controls\VariableGrid.cs" />
+    <Compile Include="Controls\FlipPanel.cs" />
+    <Compile Include="Controls\CartesianCanvas.cs" />
+    <Compile Include="Controls\ISelectableItem.cs" />
+    <Compile Include="Controls\SelectableItemsControl.cs" />
+    <Compile Include="Controls\EnumerationComboBox.cs" />
+    <Compile Include="Controls\NameValue.cs" />
+    <Compile Include="Controls\CustomWindow.cs" />
+    <Compile Include="Controls\ViewBroker.cs" />
+    <Compile Include="Controls\PivotItem.cs" />
+    <Compile Include="Controls\MultiBorder.cs" />
+    <Compile Include="Controls\PaddedGrid.cs" />
+    <Compile Include="Controls\ImageButton.cs" />
+    <Compile Include="Controls\PivotControl.cs" />
+    <Compile Include="Controls\SearchMode.cs" />
+    <Compile Include="Controls\SearchTextBox.cs" />
+    <Compile Include="Controls\AnimatedScrollViewer.cs" />
+    <Compile Include="DragAndDrop\DragAndDrop.cs" />
+    <Compile Include="DragAndDrop\DragAndDropHost.cs" />
+    <Compile Include="DragAndDrop\DragAndDropDelegate.cs" />
+    <Compile Include="DragAndDrop\DragAndDropEventArgs.cs" />
+    <Compile Include="Adorners\Adorner.cs" />
+    <Compile Include="Adorners\UIElementAdorner.cs" />
+    <Compile Include="Adorners\VisualAdorner.cs" />
+    <Compile Include="Shells\IShell.cs" />
+    <Compile Include="Shells\Shell.cs" />
+    <Compile Include="Consistency\DispatcherHelper.cs" />
+    <Compile Include="Consistency\LogicalTreeHelper.cs" />
+    <Compile Include="Consistency\MouseClickDetector.cs" />
+    <Compile Include="Consistency\HitTest.cs" />
+    <Compile Include="Consistency\GridLengthConverter.cs" />
+    <Compile Include="Consistency\SystemParameters.cs" />
+    <Compile Include="Behaviours\ListViewItemContextMenuBehaviour.cs" />
+    <Compile Include="Behaviours\SlideFadeInBehaviour.cs" />
+    <Compile Include="Behaviours\GridViewContextMenuBehaviour.cs" />
+    <Compile Include="Behaviours\SmoothScrollingBehaviour.cs" />
+    <Compile Include="Interop\dwmapi.cs" />
+    <Compile Include="Interop\User32.cs" />
+    <Compile Include="Interop\POINT.cs" />
+    <Compile Include="Interop\MINMAXINFO.cs" />
+    <Compile Include="Interop\MONITORINFO.cs" />
+    <Compile Include="Interop\RECT.cs" />
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Converters\BooleanToVisibilityConverter.cs" />
+    <Compile Include="Converters\StringNullOrEmptyToVisibilityConverter.cs" />
+    <Compile Include="Converters\InvertedBooleanConverter.cs" />
+    <Compile Include="Converters\DivideByTwoConverter.cs" />
+    <Compile Include="Converters\StringCaseConverter.cs" />
+    <Compile Include="Converters\NullToVisibilityConverter.cs" />
+    <Compile Include="Converters\EnumToBooleanConverter.cs" />
+    <Compile Include="Converters\DateTimeToSensibleStringConverter.cs" />
+    <Compile Include="Design\DesignTime.cs" />
+    <Compile Include="AdornersAdornerLayer.xaml.cs">
+      <DependentUpon>adornersadornerlayer.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlsCircularProgressBar.xaml.cs">
+      <DependentUpon>controlscircularprogressbar.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resources\images\clearsearch.png" />
+    <Resource Include="resources\images\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="adorners\adornerlayer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="controls\circularprogressbar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="themes\generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="themes\resourcedictionaries\crossbutton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="themes\resourcedictionaries\cuetextbox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="themes\resourcedictionaries\draganddrophost.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="themes\resourcedictionaries\imagebutton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="themes\resourcedictionaries\multiborder.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="themes\resourcedictionaries\pivotcontrol.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="themes\resourcedictionaries\searchtextbox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="themes\resourcedictionaries\shell.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

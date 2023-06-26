@@ -1,0 +1,493 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{03A85FDB-2C88-474A-8D3F-113E2D8531A6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EnterpriseSolutionBIDesktop</RootNamespace>
+    <AssemblyName>EntBIDesktop</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>Enterprise_Solution.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>Bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <BaseIntermediateOutputPath>C:\Build\$(AssemblyName)</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+    <BaseIntermediateOutputPath>C:\Build\$(AssemblyName)</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>Library\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.Core.v13.2, Version=13.2.20132.2016, Culture=neutral, PublicKeyToken=ea0fbbdb0910eab3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\Infragistics4.Documents.Core.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.Excel.v13.2, Version=13.2.20132.2016, Culture=neutral, PublicKeyToken=ea0fbbdb0910eab3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\Infragistics4.Documents.Excel.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Shared.v13.2, Version=13.2.20132.2016, Culture=neutral, PublicKeyToken=ea0fbbdb0910eab3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\Infragistics4.Shared.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinTabbedMdi.v13.2, Version=13.2.20132.2016, Culture=neutral, PublicKeyToken=ea0fbbdb0910eab3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\Infragistics4.Win.UltraWinTabbedMdi.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinTabControl.v13.2, Version=13.2.20132.2016, Culture=neutral, PublicKeyToken=ea0fbbdb0910eab3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\Infragistics4.Win.UltraWinTabControl.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.v13.2, Version=13.2.20132.2016, Culture=neutral, PublicKeyToken=ea0fbbdb0910eab3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\Infragistics4.Win.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.v13.2.Design, Version=13.2.20132.2016, Culture=neutral, PublicKeyToken=ea0fbbdb0910eab3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\Infragistics4.Win.v13.2.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
+      <HintPath>Library\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
+      <HintPath>Library\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdvancedDataGridView\AdvancedDataGridView.cs" />
+    <Compile Include="AdvancedDataGridView\AdvancedDataGridViewSearchToolBar.cs" />
+    <Compile Include="AdvancedDataGridView\AdvancedDataGridViewSearchToolBar.designer.cs">
+      <DependentUpon>AdvancedDataGridViewSearchToolBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdvancedDataGridView\ColumnHeaderCell.cs" />
+    <Compile Include="AdvancedDataGridView\FormCustomFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdvancedDataGridView\FormCustomFilter.Designer.cs">
+      <DependentUpon>FormCustomFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdvancedDataGridView\MenuStrip.cs" />
+    <Compile Include="AdvancedDataGridView\MenuStrip.designer.cs">
+      <DependentUpon>MenuStrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdvancedDataGridView\TreeNodeItemSelector.cs" />
+    <Compile Include="Component\AppException.cs" />
+    <Compile Include="Component\ConfigFileHandler.cs" />
+    <Compile Include="Component\HelperFunctions.cs" />
+    <Compile Include="Component\MatchingExtention.cs" />
+    <Compile Include="Component\ObjectPropertyInfoField.cs" />
+    <Compile Include="Component\Shared.cs" />
+    <Compile Include="Component\TabbedMdiManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Component\TabbedMdiManager.designer.cs">
+      <DependentUpon>TabbedMdiManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\CompanyEntity.cs" />
+    <Compile Include="Form\CompanyEntity.Implementation.cs" />
+    <Compile Include="Form\CompanyFeaturesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\CompanyFeaturesForm.Designer.cs">
+      <DependentUpon>CompanyFeaturesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\MasterTableFormOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\MasterTableFormOption.Designer.cs">
+      <DependentUpon>MasterTableFormOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\WorkflowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\WorkflowForm.Designer.cs">
+      <DependentUpon>WorkflowForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Command.cs" />
+    <Compile Include="Form\CommonUtlity.cs" />
+    <Compile Include="Form\CompanyTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\CompanyTableForm.Designer.cs">
+      <DependentUpon>CompanyTableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DatabaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DatabaseForm.designer.cs">
+      <DependentUpon>DatabaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DatabaseOverview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DatabaseOverview.Designer.cs">
+      <DependentUpon>DatabaseOverview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ErrorDetail.cs" />
+    <Compile Include="Form\ErrorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ErrorDialog.designer.cs">
+      <DependentUpon>ErrorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\EventLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\EventLog.Designer.cs">
+      <DependentUpon>EventLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\EventLogViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\FormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormBase.Designer.cs">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\MasterDetailDetailABCForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\MasterDetailDetailABCForm.Designer.cs">
+      <DependentUpon>MasterDetailDetailABCForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\MasterDetailABForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\MasterDetailABForm.Designer.cs">
+      <DependentUpon>MasterDetailABForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\MasterDetailDetailABForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\MasterDetailDetailABForm.Designer.cs">
+      <DependentUpon>MasterDetailDetailABForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\MasterDetailDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\MasterDetailDetailForm.Designer.cs">
+      <DependentUpon>MasterDetailDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\CompanyMasterTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\CompanyMasterTableForm.Designer.cs">
+      <DependentUpon>CompanyMasterTableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\MasterExcelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\MasterExcelForm.Designer.cs">
+      <DependentUpon>MasterExcelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\MasterTableGeneratorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\MasterTableGeneratorForm.Designer.cs">
+      <DependentUpon>MasterTableGeneratorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\MasterTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\MasterTableForm.Designer.cs">
+      <DependentUpon>MasterTableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\MasterDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\MasterDetailForm.Designer.cs">
+      <DependentUpon>MasterDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\OptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\OptionForm.Designer.cs">
+      <DependentUpon>OptionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\User32.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\Office2007ColorTable.cs" />
+    <Compile Include="Component\Office2007Helpers.cs" />
+    <Compile Include="Component\Office2007Renderer.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdvancedDataGridView\AdvancedDataGridViewSearchToolBar.resx">
+      <DependentUpon>AdvancedDataGridViewSearchToolBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdvancedDataGridView\FormCustomFilter.resx">
+      <DependentUpon>FormCustomFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\TabbedMdiManager.resx">
+      <DependentUpon>TabbedMdiManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\CompanyFeaturesForm.resx">
+      <DependentUpon>CompanyFeaturesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ReportEntries.rdlc" />
+    <EmbeddedResource Include="Form\WorkflowForm.resx">
+      <DependentUpon>WorkflowForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\CompanyTableForm.resx">
+      <DependentUpon>CompanyTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DatabaseForm.resx">
+      <DependentUpon>DatabaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DatabaseOverview.resx">
+      <DependentUpon>DatabaseOverview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ErrorDialog.resx">
+      <DependentUpon>ErrorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\EventLog.resx">
+      <DependentUpon>EventLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\EventLogViewer.resx">
+      <DependentUpon>EventLogViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\MasterDetailDetailABCForm.resx">
+      <DependentUpon>MasterDetailDetailABCForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\MasterDetailABForm.resx">
+      <DependentUpon>MasterDetailABForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\MasterDetailDetailABForm.resx">
+      <DependentUpon>MasterDetailDetailABForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\MasterDetailDetailForm.resx">
+      <DependentUpon>MasterDetailDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\CompanyMasterTableForm.resx">
+      <DependentUpon>CompanyMasterTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\MasterExcelForm.resx">
+      <DependentUpon>MasterExcelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\MasterTableGeneratorForm.resx">
+      <DependentUpon>MasterTableGeneratorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\MasterTableForm.resx">
+      <DependentUpon>MasterTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\MasterDetailForm.resx">
+      <DependentUpon>MasterDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\OptionForm.resx">
+      <DependentUpon>OptionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Form\config.json" />
+    <None Include="Properties\DataSources\ConfigurationManager.Component.ReportItem.datasource" />
+    <None Include="Properties\DataSources\ConfigurationManager.Form.CompanyEntity.datasource" />
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Startup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Startup.Designer.cs">
+      <DependentUpon>Startup.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Startup.resx">
+      <DependentUpon>Startup.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SearchToolBar_ButtonWholeWord.png" />
+    <None Include="Resources\SearchToolBar_ButtonSearch.png" />
+    <None Include="Resources\SearchToolBar_ButtonFromBegin.png" />
+    <None Include="Resources\SearchToolBar_ButtonClose.png" />
+    <None Include="Resources\SearchToolBar_ButtonCaseSensitive.png" />
+    <None Include="Resources\MenuStrip_ResizeGrip.png" />
+    <None Include="Resources\MenuStrip_OrderDESCtxt.png" />
+    <None Include="Resources\MenuStrip_OrderDESCnum.png" />
+    <None Include="Resources\MenuStrip_OrderDESCbool.png" />
+    <None Include="Resources\MenuStrip_OrderASCtxt.png" />
+    <None Include="Resources\MenuStrip_OrderASCnum.png" />
+    <None Include="Resources\MenuStrip_OrderASCbool.png" />
+    <None Include="Resources\ColumnHeader_UnFiltered.png" />
+    <None Include="Resources\ColumnHeader_SavedFilters.png" />
+    <None Include="Resources\ColumnHeader_OrderedDESC.png" />
+    <None Include="Resources\ColumnHeader_OrderedASC.png" />
+    <None Include="Resources\ColumnHeader_FilteredAndOrderedDESC.png" />
+    <None Include="Resources\ColumnHeader_FilteredAndOrderedASC.png" />
+    <None Include="Resources\ColumnHeader_Filtered.png" />
+    <None Include="Resources\AdvancedDataGridView_logo.png" />
+    <None Include="Resources\template_object.png" />
+    <Content Include="Enterprise_Solution.ico" />
+    <None Include="Resources\freature.json" />
+    <None Include="Resources\node_export_16.png" />
+    <None Include="Resources\saveHS.png" />
+    <None Include="Resources\RefreshDocViewHS.png" />
+    <None Include="Resources\OptionsHS.png" />
+    <None Include="Resources\openHS.png" />
+    <None Include="Resources\FullScreenHS.png" />
+    <None Include="Resources\FontHS.png" />
+    <None Include="Resources\CopyHS.png" />
+    <None Include="Resources\NotFound.gif" />
+    <None Include="Resources\Warning.gif" />
+    <None Include="Resources\Message.gif" />
+    <None Include="Resources\Error.gif" />
+    <None Include="Resources\MsdtcManager.jpg" />
+    <None Include="Resources\info_32.png" />
+    <None Include="Resources\gear_remove.png" />
+    <None Include="Resources\gear_info_32.png" />
+    <None Include="Resources\gear_add.png" />
+    <None Include="Resources\firewall_ok_32.png" />
+    <None Include="Resources\firewall_info_32.png" />
+    <None Include="Resources\firewall_delete2_32.png" />
+    <None Include="Resources\document_execute.png" />
+    <None Include="Resources\button_blue_stop.png" />
+    <None Include="Resources\button_blue_repeat.png" />
+    <None Include="Resources\button_blue_play.png" />
+    <None Include="Resources\button_blue_pause_32.png" />
+    <None Include="Resources\button_blue_arrow_right_32.png" />
+    <None Include="Resources\backg.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

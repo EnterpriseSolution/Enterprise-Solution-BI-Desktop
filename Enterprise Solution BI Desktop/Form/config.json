@@ -1,0 +1,61 @@
+﻿{
+  "framework": [
+    {
+      "action": "== Report Group  #  SYS_RPT_TankReportGroupName , Id  #   SYS_RPT_TankReportGroupNameMapping, TankReportGroupNameId"
+    },
+    {
+      "action": " RPT_TankStock  #  RPT_TankStock"
+    },
+    {
+      "action": " RESULT_MovementOperation  #  RESULT_MovementOperation"
+    },
+    {
+      "action": " RPT_ActivitySnapshot  #  RPT_ActivitySnapshot"
+    },
+    {
+      "action": " RPT_ActivityTankSnapshot  #  RPT_ActivityTankSnapshot"
+    },
+    {
+      "action": "== SECURITY_ProductPoolGroup  #  SECURITY_ProductPoolGroup , ProductPoolGroupId  #   SECURITY_ProductPoolGroupProductPoolMapping, ProductPoolGroupId"
+    },
+    {
+      "action": "===== Loading  #  TASK_Loading , Id   #   TASK_Loading_Activity, TaskId  #  TASK_Loading_Activity, Id  #  TASK_Loading_Activity_Additive , ActivityId  #  TASK_Loading_Activity_Spiking_Tank , ActivityId  #  TASK_Loading_Activity_Tank , ActivityId"
+    },
+    {
+      "action": "=== Discharge  #  TASK_Discharge , Id  #   TASK_Discharge_Activity, TaskId #  TASK_Discharge_Activity, Id  #  TASK_Discharge_Activity_Tank , ActivityId"
+    },
+    {
+      "action": "==== Feed  #  TASK_Feed , Id   #   TASK_Feed_Activity, TaskId  #  TASK_Feed_Activity, Id  #  TASK_Feed_Activity_Tank , ActivityId #  TASK_Feed_Activity_Spiking_Tank , ActivityId"
+    },
+    {
+      "action": "==== Rundown  #  TASK_Rundown , Id   #   TASK_Rundown_Activity, TaskId  #  TASK_Rundown_Activity, Id  #  TASK_Rundown_Activity_Additive , ActivityId #  TASK_Rundown_Activity_Tank , ActivityId"
+    },
+    {
+      "action": " Mixing  #  TASK_Mixing"
+    },
+    {
+      "action": " OAS_Loading_TaskResult  #  OAS_Loading_TaskResult"
+    },
+    {
+      "action": " OAS_Discharge_TaskResult  #  OAS_Discharge_TaskResult"
+    },
+    {
+      "action": "=== Draining  #  TASK_Draining , Id   #   TASK_Draining_Activity, TaskId  #  TASK_Draining_Activity, Id  #  TASK_Draining_Activity_Tank , ActivityId"
+    },
+    {
+      "action": " Settling  #  TASK_Settling"
+    },
+    {
+      "action": "== Refinery Transfer  #  TASK_Refinery_Transfer , Id  #   TASK_Refinery_Transfer_Activity, TaskId"
+    },
+    {
+      "action": "==== Task Transfer  #  TASK_Transfer , Id   #   TASK_Transfer_Activity, TaskId  #  TASK_Transfer_Activity, Id  #  TASK_Transfer_Activity_Additive , ActivityId  #  TASK_Transfer_Activity_Tank , ActivityId"
+    },
+    {
+      "action": " OAS_Loading_TaskResult  #  OAS_Loading_TaskResult"
+    },
+    {
+      "action": " OAS_Discharge_TaskResult  #  OAS_Discharge_TaskResult"
+    }
+  ]
+}

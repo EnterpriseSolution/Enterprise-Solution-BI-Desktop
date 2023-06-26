@@ -1,0 +1,32 @@
+﻿{
+  "userid": "",
+  "password": "",
+  "domain": "localhost",
+  "version": "0.1.0.0",
+  "printer": "",
+  "fontfamily": "Courier New",
+  "fontsize": "10",
+  "cells": [
+
+    {
+      "name": "FIFO",
+      "query": "SELECT COUNT(*)  FROM ICFIFO",
+    },
+    {
+      "name": "Lot",
+      "query": "SELECT COUNT(*)  FROM dbo.ICLOTS"
+    },
+    {
+      "name": "Serial",
+      "query": "SELECT COUNT(*)  FROM dbo.ICSERS "
+    },
+    {
+      "name": "Lot for Lot",
+      "query": "SELECT COUNT(*)  FROM dbo.GBITEM WHERE ORDER_POLICY='LFL'",
+    },
+    {
+      "name": "Order Multiple Lot for Lot",
+      "remark": "SELECT COUNT(*)  FROM dbo.GBITEM WHERE ORDER_POLICY='LOM'"
+    }
+   ]
+}
